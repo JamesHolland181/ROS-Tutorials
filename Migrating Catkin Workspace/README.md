@@ -1,11 +1,11 @@
-#How to Migrate Catkin Workspaces
+# How to Migrate Catkin Workspaces
 
-##This is a quick guide for how to migrate Catkin workspaces. The process is fairly straightforward, as shown in [this forum post](https://answers.ros.org/question/193901/how-to-migrate-a-catkin-workspace/).
+## This is a quick guide for how to migrate Catkin workspaces. The process is fairly straightforward, as shown in [this forum post](https://answers.ros.org/question/193901/how-to-migrate-a-catkin-workspace/).
 
-##Below is a written explanation as well as a short video showing the steps. Let's get started!
+## Below is a written explanation as well as a short video showing the steps. Let's get started!
 
 Here is the video:
-![short video tut](https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/2022-02-12_04-13-38.mp4)
+https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/2022-02-12_04-13-38.mp4
 
 First, Remove “devel/” and “build/” directories as well as the “CmakeLists.txt” file in the “src/” directory as shown below.
 
