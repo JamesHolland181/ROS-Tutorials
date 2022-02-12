@@ -5,7 +5,7 @@
 ## Below is a written explanation as well as a short video showing the steps. Let's get started!
 
 Here is the video:
-https://user-images.githubusercontent.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/2022-02-12_04-13-38.mp4
+https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/tutorial.mp4
 
 First, Remove “devel/” and “build/” directories as well as the “CmakeLists.txt” file in the “src/” directory as shown below.
 
