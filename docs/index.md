@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+# How to Migrate Catkin Workspaces
 
-You can use the [editor on GitHub](https://github.com/JamesHolland181/ROS-Tutorials/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## This is a quick guide for how to migrate Catkin workspaces. The process is fairly straightforward, as shown in [this forum post](https://answers.ros.org/question/193901/how-to-migrate-a-catkin-workspace/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Below is a written explanation as well as a short video showing the steps. Let's get started!
 
-### Markdown
+Here is the video:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+https://user-images.githubusercontent.com/42613313/153722071-c21a2433-b4ed-47bd-b08c-dbbab0fb9f0c.mp4
 
-```markdown
-Syntax highlighted code block
+First, Remove “devel/” and “build/” directories as well as the “CmakeLists.txt” file in the “src/” directory as shown below.
 
-# Header 1
-## Header 2
-### Header 3
+![directories to remove](https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/directories%20to%20remove.png)
+![cmakelist to remove](https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/file%20to%20remove.png)
 
-- Bulleted
-- List
+Next, relocate the target package(s) to the desired location.
 
-1. Numbered
-2. List
+![desired packages](https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/workspace%20to%20move.png)
+![target location](https://github.com/JamesHolland181/ROS-Tutorials/blob/main/Migrating%20Catkin%20Workspace/target%20location.png)
 
-**Bold** and _Italic_ and `Code` text
+Finally, source your ROS distro ('source /opt/ros/DISTRO/setup.bash') and then run 'catkin_make' in the top directory.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JamesHolland181/ROS-Tutorials/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
